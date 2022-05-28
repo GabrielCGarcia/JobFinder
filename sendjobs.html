@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobFinder</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="sendjobs">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="JobFinder" id="logo">
+                    </a>
+                    <i class="lni lni-menu btn-menumobile"></i>
+                    <ul>
+                        <li><a href="findjobs.html">Encontrar vaga</a></li>
+                        <li><a href="sendjobs.html">Enviar vaga</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="sendjobs-container" class="wrapper">
+            <h1>Preencha os dados da vaga</h1>
+            <form>
+                <div class="input-box">
+                    <label>Titulo da vaga <span class="required">*</span></label>
+                    <input type="text" name="jobtitle" placeholder="Insira o titulo da vaga">
+                </div>
+                <div class="input-box">
+                    <label>Descrição da vaga <span class="required">*</span></label>
+                    <textarea type="text" name="description" placeholder="Insira a descrição da vaga"></textarea>
+                </div>
+                <div class="input-box">
+                    <label>Nome da empresa <span class="required">*</span></label>
+                    <input type="text" name="company" placeholder="Insira o nome da empresa">
+                </div>
+                <div class="input-box">
+                    <label>Tipo de contração <span class="required">*</span></label>
+                    <select name="jobtype">
+                        <option value="">Escolha uma opção</option>
+                        <option value="pj">PJ</option>
+                        <option value="clt">CLT</option>
+                        <option value="homeoffice">Home Office</option>
+                        <option value="freelancer">Free Lancer</option>
+                    </select>
+                <div class="input-box">
+                    <input type="submit" value="Enviar">
+                </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="wrapper">
+                <div class="footer-box">
+                    <div class="company-footer">
+                        <img src="img/logo.png">
+                        <h2>JobFinder</h2>
+                        <p>A maneira mais facil de encontrar seu próximno emprego.</p>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="aticle-footer">
+                        <h2>Artigos rescentes</h2>
+                        <ul class="footer-list footer-article-list">
+                            <li>
+                                <a href="#">Como conseguir o primeiro emprego em tempos de crise?</a>
+                                <span class="article-date">05 de Fevereiro de 2022</span>
+                            </li>
+                            <li>
+                                <a href="#">"A Bolha Tech vai estourar", mas, ela realmente existe?</a>
+                                <span class="article-date">24 de Maio de 2022</span>
+                            </li>
+                            <li>
+                                <a href="#">Como a pandemia afetou a economia global?</a>
+                                <span class="article-date">12 de Setembro de 2021</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <h2>Nos encontre nas redes sociais</h2>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">
+                                <i class="lni lni-facebook-original"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="lni lni-instagram-original"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="lni lni-linkedin-original"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="wrapper">
+                    <i class="lni lni-user"></i>
+                    <span>Gabriel C. Garcia (2022)</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

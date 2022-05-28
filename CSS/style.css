@@ -25,6 +25,11 @@ header {
     width: 100%;
 }
 
+/* HIDE ON DESKTOP*/
+.nav-container .btn-menumobile {
+    display: none;
+}
+
 /* NAVBAR */
 nav {
     position: fixed;
@@ -117,7 +122,7 @@ nav:after {
     margin: 0 10px;
 }
 
-#search-form input[type=submit] {
+#search-form input[type=submit], #sendjobs input[type=submit] {
     background-color: #3381F3;
     text-transform: uppercase;
     color: #FFF;
@@ -125,7 +130,7 @@ nav:after {
     transition: 0.5s;
 }
 
-#search-form input[type=submit]:hover {
+#search-form input[type=submit]:hover, #sendjobs input[type=submit]:hover {
     background-color: #2B79EB;
 }
 
@@ -580,4 +585,458 @@ footer .wrapper:after {
 .footer-bottom span {
     font-weight: 600;
     margin-top: 40px;
+}
+
+/* FIND JOBS PAGE*/
+#findjobs #search-form {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%;
+    background-color: #3381F3;
+    border-top: 5px solid #0000e6;
+}
+
+#lastjobs-container {
+    margin-top: 3em;
+}
+
+#search-form input, #search-form select {
+    width: 20%;
+}
+
+#findjobs #search-form input[type=submit] {
+    background-color: #FFF;
+    color: #3381F3;
+}
+
+#findjobs #lastjobs-container ul {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+}
+
+#type-filter {
+    text-align: left;
+}
+
+#findjobs #type-filter ul {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background-color: #FFF;
+    border-right: 1px solid #CCC;
+}
+
+#findjobs #type-filter ul li {
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: none;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding-left: 1em;
+}
+
+#findjobs #type-filter ul li:nth-child(1), #findjobs #type-filter ul li:nth-child(2), #findjobs #type-filter ul li:nth-child(3) {
+    border-right: 0;
+}
+
+#findjobs #type-filter label {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+
+/* SEND JOBS PAGE */
+#sendjobs #sendjobs-container {
+    margin-top: 100px;
+    background: none;
+    padding: 5em 0;
+}
+
+
+#sendjobs h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 2em;
+    width: 50%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sendjobs label {
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 1em;
+}
+
+#sendjobs input, #sendjobs textarea, #sendjobs select {
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+#sendjobs input {
+    border-radius: 5em;
+    border: 1px solid #CCC;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+} 
+
+#sendjobs textarea, #sendjobs select {
+    border-radius: 5em;
+    border: 1px solid #CCC;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#sendjobs input[type=submit] {
+    width: 200px;
+    float: right;
+}
+
+.input-box:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* JOB PAGE */
+#job-header {
+    width: 100%;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #CCC;
+    margin-top: 100px;
+    padding: 2em 0;
+}
+
+#job-header h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+#job-header .company box {
+    width: 100%;
+}
+
+#job-header #job-info {
+    height: 100px;
+    width: 100%;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#job-header #job-info div {
+    width: 25%;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    position: relative;
+    padding-left: 3em;
+    padding-right: 3em;
+    box-sizing: border-box;
+    padding-top: 0;
+}
+
+#job-header #job-info #job-type {
+    padding-top: 5px;
+    margin-left: 12.5%;
+}
+
+#job-info .date i, #job-info .date p {
+    display: inline-block;
+    color: #666;
+}
+
+#job-info .date p {
+    margin-left: 10px;
+}
+
+#job-header #job-info div:nth-child(2) {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
+
+    #logo {
+        position: absolute;
+        left: 50px;
+    }
+
+    .nav-container ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #search-form {
+        padding-top: 25em;
+        padding-bottom: 5em;
+    }
+
+    #search-form form {
+        width: 50%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form form input, #search-form form select {
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-right: 0;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #lastjobs-container.wrapper, #status-container.wrapper, #lastjobs-container.wrapper, #blog-container.wrapper, .wrapper {
+        max-width: 960px;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    /* FIND JOBS PAGE */
+
+    #findjobs #search-form input[type=submit] {
+        margin-bottom: 0;
+    }
+
+    #findjobs #type-filter ul li {
+        width: 100%;
+        border-bottom: 1px solid #CCC;
+        box-sizing: border-box;
+    }
+
+    #findjobs #type-filter ul li:last-child {
+        border-bottom: none; 
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .company-box {
+        width: 46%;
+        padding-left: 1em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 1em;
+    }
+
+    .company-box .company-info p, .locality i, .locality p, .job-type span {
+        font-size: 0.8em;
+    }
+
+    .job-type {
+        right: 1em;
+    }
+
+    #sendjobs-inner h2, #sendjobs-inner p {
+        text-shadow: 0.5px 0.5px #000;
+    }
+
+    .status-box {
+        width: 49.4%;
+        border: none;
+    }
+
+    .status-box:nth-child(1), .status-box:nth-child(3){
+        border-right: 1px solid #666;
+    }
+
+
+    .testmony-box {
+        width: 49.4%;
+    }
+
+
+    .article-box {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 4em;
+    }
+
+    #logo {
+        left: 2em;
+        height: 2em;
+        width: 2em;
+        margin-top: 1em;
+    }
+
+    .btn-menumobile {
+        display: block;
+        font-size: 1.75em;
+        color: #CCC;
+        position: absolute;
+        right: 1.5em;
+        top: 0.75em;
+    }
+
+    .nav-container ul {
+        position: relative;
+        top:4em;
+        height: 3em; 
+        line-height: 3em;
+        display: none;
+    }
+
+    .nav-container ul li {
+        display: block;
+        background-color: #FFF;
+        margin: 0;
+        border-top: 1px solid #CCC;
+    }
+
+    .nav-container ul li a {
+        font-size: 1em;
+    }
+
+    .open {
+        display: block !important;
+    }
+
+    #main-banner {
+        margin-top: 4em;
+    }
+
+    #search-form {
+        padding-top: 15em;
+        padding-bottom: 5em;
+        width: 90%;
+    }
+
+    #search-form h1 {
+        font-size: 1.6em;
+    }
+
+    #search-form p {
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    #search-form form {
+        width: 80%;
+    }
+
+    #search-form input[type-submit] {
+        margin-bottom: 0;
+    }
+
+    #last-jobs-container {
+        padding: 5em 0;
+    }
+
+    .locality {
+        display: none;
+    }
+
+    .company-box .company-info {
+        margin-top: 1em;
+        margin-left: 1em;
+        width: 0.8em;
+    }
+
+    .company-box .company-info h3 {
+        font-size: 0.8em;
+    }
+
+    .job-type {
+        width: 22%;
+    }
+
+    #sendjobs-container h2 {
+        background-position: 1.5em;
+        width: 100%;
+    }
+
+    #sendjobs-container p {
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .status-box {
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    .status-box:nth-child(1), .status-box:nth-child(3) {
+        border: none;
+    }
+
+    #testmony-container {
+        padding: 5em 0;
+    }
+
+    .testmony-box {
+        width: 100%;
+    }
+
+    #testmony-container p {
+        margin-bottom: 1em;
+    }
+
+    .footer-box {
+        display: block;
+        width: 100%;
+    }
+
+    /* SENDJOBS PAGE*/
+    #sendjobs #sendjobs-container {
+        padding: 2em 0;
+    }
+
+    #sendjobs h1 {
+        font-size: 2em;
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .input-box {
+        width: 80%
+    }
+
 }
