@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobFinder</title>
+    <title>JobFinder - Vaga Facebook</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
     <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="jobpage">
         <header>
             <nav>
                 <div class="nav-container">
@@ -21,26 +21,27 @@
                     </a>
                     <i class="lni lni-menu btn-menumobile"></i>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="findjobs.html">Encontrar vaga</a></li>
                         <li><a href="sendjobs.html">Enviar vaga</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <div id="job-header">
-            <h1>Developer</h1>
+            <h1>Full Stack Developer</h1>
             <div id="job-info">
                 <div class="job-type">
-                    <span class="clt">CLT</span>
+                    <span class="pj">PJ</span>
                 </div>
                 <div class="locality">
                     <i class="lni lni-money-location"></i>
-                    <p>Mountain View, California</p>
+                    <p>Menlo Park, California</p>
                 </div>
                 <div class="date">
                     <i class="lni lni-calendar"></i>
-                    <p>Enviada há 3 dias</p>
+                    <p>Enviada há 11 dias</p>
                 </div>
             </div>
         </div>
@@ -48,39 +49,39 @@
             <main id="job-container">
                 <div class="about-company-container">
                     <h2 class="page-title">Sobre a empresa</h2>
-                    <img src="img/company.jpg" id="company-img" alt="Como é google">
-                    <p class="discription">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nulla dolore sapiente non veritatis exercitationem repudiandae ex necessitatibus eius ducimus enim, animi repellendus doloremque illo quasi quos facilis eum corporis!</p>
+                    <img src="img/banner.jpg" id="company-img" alt="Como é IBM">
+                    <p class="discription">Meta Platforms, Inc., nome comercial Meta é um conglomerado estadunidense de tecnologia e mídia social dono do Facebook.</p>
                 </div>
                 <div id="about-job-container">
                     <h2 class="page-title">Sobre a vaga</h2>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, consequatur. Quisquam corrupti quo deleniti quam, asperiores, voluptatibus quidem eligendi in, ipsa et repellendus explicabo ad id perspiciatis vitae voluptate recusandae.</p>
+                    <p class="description">Como sua própria denominação indica, o desenvolvedor full stack é o profissional habilitado para compreender e operar em todas as camadas do desenvolvimento de um projeto, desde a criação de servidores internos até interfaces de comunicação com o usuário final.</p>
                 </div>
                 <div id="min-requirements">
                     <h2 class="page-title">Requisitos mínimos da vaga</h2>
                     <ul class="jobpage-list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Dolorem officiis modi pariatur numquam. Deserunt quisquam.</li>
+                        <li>Illum dolores magni ex vero est magnam commodi ab nihil nulla iure sed aliquam animi!</li>
+                        <li>Lorem nihil nulla iure sed aliquam animi ipsum dolor sit amet, consectetur adipisicing elit.</li>
                     </ul>
                 </div>
                 <div id="job-benefits-container">
                     <h2 class="page-title">Beneficios</h2>
                     <ul class="jobpage-list">
+                        <li>Illum dolores magni ex vero est magnam commodi ab nihil nulla iure sed aliquam animi!</li>
+                        <li>Lorem nihil nulla iure sed aliquam animi ipsum dolor sit amet, consectetur adipisicing elit.</li>
                         <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        <li>Dolorem officiis modi pariatur numquam. Deserunt quisquam.</li>
                     </ul>
                 </div>
             </main>
 
             <aside id="companyinfo-container">
-                <img src="img/googlelogo.png" alt="Google logo">
+                <img src="img/facebooklogo.png" alt="IBM logo">
                 <div class="job-type">
-                    <span class="clt">CLT</span>
+                    <span class="pj">PJ</span>
                 </div>
-                <a href="" id="apply-btn">Candidatar-se</a>
+                <a id="apply-btn" href="#">Candidatar-se</a>
                 <div class="companysocial-container">
                     <ul id="job-social-list">
                         <li>
@@ -112,46 +113,47 @@
                     <div class="company-footer">
                         <img src="img/logo.png">
                         <h2>JobFinder</h2>
-                        <p>A maneira mais facil de encontrar seu próximno emprego.</p>
+                        <p>A maneira mais facil de encontrar seu próximo emprego.</p>
                     </div>
                 </div>
                 <div class="footer-box">
                     <div class="aticle-footer">
-                        <h2>Artigos rescentes</h2>
+                        <h2>Artigos recentes</h2>
                         <ul class="footer-list footer-article-list">
                             <li>
                                 <a href="#">Como conseguir o primeiro emprego em tempos de crise?</a>
-                                <span class="article-date">05 de Fevereiro de 2022</span>
+                                <span class="article-date">06 de maio de 2022</span>
                             </li>
                             <li>
-                                <a href="#">"A Bolha Tech vai estourar", mas, ela realmente existe?</a>
-                                <span class="article-date">24 de Maio de 2022</span>
+                                <a href="#">"A Bolha Tech vai estourar", mas... ela realmente existe?</a>
+                                <span class="article-date">1 de abril de 2022</span>
                             </li>
                             <li>
                                 <a href="#">Como a pandemia afetou a economia global?</a>
-                                <span class="article-date">12 de Setembro de 2021</span>
+                                <span class="article-date">4 de março de 2022</span>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <a href="" name="contato"></a>
                 <div class="footer-box">
                     <h2>Nos encontre nas redes sociais</h2>
                     <ul class="footer-list">
                         <li>
                             <a href="#">
-                                <i class="lni lni-facebook-original"></i>
+                                <i class="lni lni-facebook-original"></i> <br>
                                 <span>Facebook</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="lni lni-instagram-original"></i>
+                                <i class="lni lni-instagram-original"></i> <br>
                                 <span>Instagram</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <i class="lni lni-linkedin-original"></i>
+                                <i class="lni lni-linkedin-original"></i> <br>
                                 <span>LinkedIn</span>
                             </a>
                         </li>
@@ -162,6 +164,7 @@
                 <div class="wrapper">
                     <i class="lni lni-user"></i>
                     <span>Gabriel C. Garcia (2022)</span>
+                    <a href="https://gabrielcgarcia.github.io/PORTFOLIO/" target="_blank" style="color: #48ecec;">Portfolio <i class="lni lni-arrow-top-right"></i></a>
                 </div>
             </div>
         </footer>
